@@ -1,0 +1,24 @@
+{
+  "name": "higherorlower",
+  "version": "1.0.0",
+  "description": "Multiplayer higher or lower game",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./server/app.js",
+    "dev": "nodemon ./server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frriNz/HigherOrLower.js.git"
+  },
+  "author": "Finn Wohner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frriNz/HigherOrLower.js/issues"
+  },
+  "homepage": "https://github.com/frriNz/HigherOrLower.js#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  }
+}

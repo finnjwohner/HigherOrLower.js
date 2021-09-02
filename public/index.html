@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/style.css" type="text/css">
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./guess.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Higher Or Lower</title>
+    </head>
+    <body>
+        <section style="display: none;">
+            <h4>7.</h4>
+            <h1>HIGHER!</h1>
+            <div class="btns">
+                <button id="higher-btn" onclick="changeGuess('higher')">Higher</button>
+                <button id="lower-btn" onclick="changeGuess('lower')">Lower</button>
+            </div>
+            <h3>You Haven't Guessed!</h3>
+        </section>
+        <form>
+            <h2>Enter a name to join the casino.</h2>
+            <input id="username" autocomplete="off" type="text" placeholder="Name" maxlength=15>
+            <input type="submit" value="Enter">
+        </form>
+        <main>
+            <div class="not-guessed">
+                <h2>Not Guessed</h2>
+            </div>
+            <div class="higher">
+                <h2>Higher</h2>
+            </div>
+            <div class="lower">
+                <h2>Lower</h2>
+            </div>
+        </main>
+    </body>
+</html>
